@@ -11,5 +11,5 @@ switch (true) {
     console.log(`${chocolateName} is Available`);
     break;
   default:
-    console.log(`${chocolateName} is Out of Out Of Stock`);
+    console.log(`${chocolateName} Out Of Stock`);
 }
