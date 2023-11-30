@@ -1,0 +1,16 @@
+PRIMITIVE DATATYPES
+String
+number
+Boolean
+Null
+Undefined
+Symbols
+
+
+REFERENCE DATATYPES
+Objects
+Functions
+Collections
+Arrays
+Dates
+Other types of Objects

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="">
+    <!-- Cart Section-->
+    <section class="border w-screen h-screen px-9 ">
+      <div class="w-fit justify-center items-center text-center">
+        <div class="flex">
+          <!-- Item 1-->
+          <div
+            class="bg-slate-600 text-center py-4 mt-96 rounded shadow shadow-white mr-2"
+          >
+            <div class="p-2">
+              <h3 class="font-bold text-cyan-400" id="itemName1">Apple</h3>
+              <h2 class="text-xs font-bold pb-1" id="itemPrice1">₹50</h2>
+              <input
+                type="number"
+                class="w-24 border-none outline-none rounded-sm text-black px-1"
+                id="items-1"
+              />
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-2 text-xs py-1 rounded mt-2 font-semibold flex mx-auto hover:bg-yellow-600 duration-200"
+                id="addtocartBtn-1"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Item 2-->
+          <div
+            class="bg-slate-600 text-center py-4 mt-96 rounded shadow shadow-white mr-2"
+          >
+            <div class="p-2">
+              <h3 class="font-bold text-cyan-400" id="itemName2">Orange</h3>
+              <h2 class="text-xs font-bold pb-1" id="itemPrice2">₹50</h2>
+              <input
+                type="number"
+                class="w-24 border-none outline-none rounded-sm text-black px-1"
+                id="items-2"
+              />
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-2 text-xs py-1 rounded mt-2 flex mx-auto font-semibold hover:bg-yellow-600 duration-200"
+                id="addtocartBtn-2"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Item 3-->
+          <div
+            class="bg-slate-600 text-center py-4 mt-96 rounded shadow shadow-white mr-2"
+          >
+            <div class="p-2">
+              <h3 class="font-bold text-cyan-400" id="itemName3">Banana</h3>
+              <h2 class="text-xs font-bold pb-1" id="itemPrice3">₹50</h2>
+              <input
+                type="number"
+                class="w-24 border-none outline-none rounded-sm text-black px-1"
+                id="items-3"
+              />
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-2 text-xs py-1 rounded mt-2 flex mx-auto font-semibold hover:bg-yellow-600 duration-200"
+                id="addtocartBtn-3"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Item 4-->
+          <div
+            class="bg-slate-600 text-center py-4 mt-96 rounded shadow shadow-white mr-2"
+          >
+            <div class="p-2">
+              <h3 class="font-bold text-cyan-400" id="itemName4">Pineapple</h3>
+              <h2 class="text-xs font-bold pb-1" id="itemPrice4">₹50</h2>
+              <input
+                type="number"
+                class="w-24 border-none outline-none rounded-sm text-black px-1"
+                id="items-4"
+              />
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-2 text-xs py-1 rounded mt-2 flex mx-auto font-semibold hover:bg-yellow-600 duration-200"
+                id="addtocartBtn-4"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Item 5-->
+          <div
+            class="bg-slate-600 text-center py-4 mt-96 rounded shadow shadow-white mr-2"
+          >
+            <div class="p-2">
+              <h3 class="font-bold text-cyan-400" id="itemName5">slice</h3>
+              <h2 class="text-xs font-bold pb-1" id="itemPrice5">₹50</h2>
+              <input
+                type="number"
+                class="w-24 border-none outline-none rounded-sm text-black px-1"
+                id="items-5"
+              />
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-2 text-xs py-1 rounded mt-2 flex mx-auto font-semibold hover:bg-yellow-600 duration-200"
+                id="addtocartBtn-5"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- items Total Out Section -->
+      <div class="w-1/4 h-1/4 bg-gray-500 mx-[700px] shadow shadow-white rounded -mt-60">
+        <div class="">
+          <h3
+            class="uppercase font-semibold text-center border-b border-gray-400"
+          >
+            super market
+          </h3>
+
+          <div class="flex justify-between px-2 border-b border-gray-600">
+            <h1 class="uppercase font-semibold text-cyan-300">ITEMS</h1>
+            <h1 class="uppercase font-semibold text-cyan-300">Quantity</h1>
+            <h1 class="uppercase font-semibold text-cyan-300">Price</h1>
+          </div>
+
+          <div class="flex justify-between px-2 ">
+            
+            <ul class="font-semibold text-yellow-500">
+              <li id="items-check1"></li>
+              <li id="items-check2"></li>
+              <li id="items-check3"></li>
+              <li id="items-check4"></li>
+              <li id="items-check5"></li>
+            </ul>
+
+            <ul class="font-semibold text-yellow-500">
+              <li id="quantity-1"></li>
+              <li id="quantity-2"></li>
+              <li id="quantity-3"></li>
+              <li id="quantity-4"></li>
+              <li id="quantity-5"></li>
+            </ul>
+
+            <ul class="font-semibold text-yellow-500">
+              <li id="price-1"></li>
+              <li id="price-2"></li>
+              <li id="price-3"></li>
+              <li id="price-4"></li>
+              <li id="price-5"></li>
+            </ul>
+
+
+          </div>
+          
+          <div class="flex justify-evenly mt-7  font-semibold bg-gray-600 rounded shadow">
+            <span class="mx-auto">Total</span>
+            <h3 class="mx-auto" id="TotalAmount">0.0₹</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="/JS/Task01.js"></script>
+  </body>
+</html>
