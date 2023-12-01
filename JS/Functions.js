@@ -21,28 +21,41 @@ function portfolio() {
 
   //reAsigning the Age
   profile.Age = 19;
-
   // Filteing the True Values
   const playedGames = Object.keys(profile.EverPlayedGames).filter(
     (game) => profile.EverPlayedGames[game]
   );
   // Adding little Bit Space and ,
   const FilterdGames = playedGames.join(", ");
-
   // Pushing New Index In [WhatIdo] Object
   profile.WhatIdo[2] = "Discord Bot Developer";
 
+  const FavLanguageoutput = profile.FavCodingLan.join(", ");
+  const FavGames = profile.FavGames.join(", ");
+  const WhatIdo = profile.WhatIdo.join(", ");
+
+  /**
+ 
+    let FavLanOutput = [];
+    for (let i = 0; i < profile.FavCodingLan.length; i++) {
+      const Fav = profile.FavCodingLan[i];
+      FavLanOutput.push(Fav);
+    }
+    const FavLanguageoutput = FavLanOutput;
+    console.log(FavLanOutput);
+
+ **/
+
   // Loging the results
   console.log(
-    `Name: ${profile.Name} \nAge: ${profile.Age}\nStudent: ${
-      profile.Student ? "yes" : "No"
-    }\nWorks: ${profile.WhatIdo[0]}, ${profile.WhatIdo[1]}, ${
-      profile.WhatIdo[2]
-    }\nAbout: ${profile.AboutMe}\nFavGames: ${profile.FavGames[0]},${
-      profile.FavGames[1]
-    }\nFavCoding: ${profile.FavCodingLan[0]},${profile.FavCodingLan[1]},${
-      profile.FavCodingLan[2]
-    }, ${profile.FavCodingLan[3]}\nPlayedGames: ${FilterdGames}`
+    `Name: ${profile.Name} 
+    \nAge: ${profile.Age}
+    \nStudent: ${profile.Student ? "yes" : "No"}
+    \nWorks: ${WhatIdo}
+    \nAbout: ${profile.AboutMe}
+    \nFavGames: ${FavGames}
+    \nFavCodingLanguage: ${FavLanguageoutput}
+    \nPlayedGames: ${FilterdGames}`
   );
 }
 
