@@ -20,7 +20,7 @@ function portfolio() {
   //   console.log(typeof profile);
 
   //reAsigning the Age
-  profile.Age = 19;
+  profile.Age = 19; 
   // Filteing the True Values
   const playedGames = Object.keys(profile.EverPlayedGames).filter(
     (game) => profile.EverPlayedGames[game]
@@ -50,7 +50,7 @@ function portfolio() {
   console.log(
     `Name: ${profile.Name} 
     \nAge: ${profile.Age}
-    \nStudent: ${profile.Student ? "yes" : "No"}
+    \nStudent: ${profile.Student ? "yes" : "No"} 
     \nWorks: ${WhatIdo}
     \nAbout: ${profile.AboutMe}
     \nFavGames: ${FavGames}
