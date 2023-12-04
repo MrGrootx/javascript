@@ -5,7 +5,8 @@ const ErrorMessage = document.getElementById("ErrorMessage");
 // BlackList Words DataBase
 const WordsList = ["fuck", "bitch"];
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
   let getWords = input.value;
 
   if (getWords == Number(input.value)) {
@@ -22,10 +23,17 @@ btn.addEventListener("click", function () {
   // console.log(blacklistWords);
 
   if ((getWords = blacklistWords)) {
-    console.log("This is black list word");
+    ErrorMessage.textContent = "Blacklisted Word Spotted";
+    console.log("");
+
+    setTimeout(() => {
+      ErrorMessage.textContent = "";
+      input.value = "";
+      location.reload();
+    }, 5000);
+
     return;
   } else {
-    console.log(input.value);
-    console.log("No This Word to good to use");
+    ErrorMessage.textContent = `[ ${input.value} ] You Can Feel Free to use this word`;
   }
 });
