@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./Task01.html",
     "./blackListwordtest.html",
+    "./userVerification.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
