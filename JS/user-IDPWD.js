@@ -1,15 +1,24 @@
-const input = "Abishek";
+// Entering the userName and PassWord
+const input = "abishek";
 const inputPassword = "1234";
 
+// removing the extra space  if space have [Left & Right]
+const inputvalue = input.trim();
+const inputPasswordtrim = inputPassword.trim();
+
+// checking if have any Caps Letter
+const checkcaps = inputvalue.toLowerCase();
+const checkpasscaps = inputPasswordtrim.toLowerCase();
+
+//  Stored UserName & Password For Admin
 const userDetails = {
-  user: "Abishek",
+  user: "abishek",
   pass: "1234",
 };
 
-
-console.log(userDetails);
-
-const userName = userDetails.user;
-const password = userDetails.pass;
-
-const fillterUserDetails = userDetails;
+if (checkcaps == userDetails.user && checkpasscaps == userDetails.pass) {
+  const msg = `Welcome back ${checkcaps}`;
+  console.log(msg);
+} else {
+  console.warn("You Are Not Authorized  to Enter ");
+}
