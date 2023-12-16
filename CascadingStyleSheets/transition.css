@@ -1,0 +1,17 @@
+div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    /* Select the property that you want to animate */
+    transition-property: width background;
+    /*transition-duration: timing (in seconds); */
+    transition-duration: 1s,2s,0.5s;
+   
+    /* start after deley time */
+    transition-delay: 1s;
+}
+div:hover{
+    width: 600px;
+    background: orangered;
+}
