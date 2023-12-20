@@ -1,4 +1,4 @@
-PRIMITIVE DATATYPES
+# PRIMITIVE DATATYPES
 String
 number
 Boolean
@@ -7,7 +7,7 @@ Undefined
 Symbols
 
 
-REFERENCE DATATYPES
+# REFERENCE DATATYPES
 Objects
 Functions
 Collections
