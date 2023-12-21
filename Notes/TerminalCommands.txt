@@ -1,0 +1,5 @@
+[clear]                         -  To Clear the Console 
+[cd (Folder Name)]              -  to change the Folder File Dir
+[em -rf (Folder Name) ]         -  remove Folder 
+[code . ]                       -  Visual Studio open Command
+
