@@ -1,0 +1,12 @@
+/*
+  Form Events in JavaScript
+      submit
+      reset
+      change
+
+      checked
+      blur
+      focus
+      input
+     
+*/
