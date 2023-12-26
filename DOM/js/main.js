@@ -34,3 +34,10 @@ saveItemBtn.addEventListener("click", () => {
   // After Append adding onclick Attribute
   divRemoveBtn.parentElement.setAttribute("onclick", "removeItem(event)");
 });
+
+
+// Confirm Message
+function data() {
+  confirm("Are Your Sure")
+}
+data()
