@@ -2,7 +2,7 @@
   "name": "javascriptpractice",
   "version": "1.0.0",
   "description": "",
-  "main": "Task01.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
