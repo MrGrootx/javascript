@@ -1,8 +1,11 @@
+
 /** @type {import('tailwindcss').Config} */
+
+
 export default {
   content: [
     "./index.html",
-    "./Task01.html",
+    "./index02.html",
     "./blackListwordtest.html",
     "./userVerification.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +13,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animatecss'),
+  ],
 }
 
