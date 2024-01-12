@@ -1,3 +1,5 @@
+const { WebGL3DRenderTarget } = require("three");
+
 const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const evenNum = num.filter((num) => num % 2 === 0);
 console.log(evenNum);
@@ -30,9 +32,7 @@ const each = filterWords.forEach((name) => {
 
 */
 
-// Method 2
+// Method 2 
 const filterFourWords = words.filter(word => word.length === 4)
 console.log(filterFourWords);
-
-
 

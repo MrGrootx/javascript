@@ -21,6 +21,7 @@
   "dependencies": {
     "dayjs": "^1.11.10",
     "express": "^4.18.2",
+    "linkedin-api-client": "^0.3.0",
     "three": "^0.160.0"
   }
 }

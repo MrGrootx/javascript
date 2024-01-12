@@ -1,12 +1,26 @@
 // 5aa056df78d070bb784376917095f6c7
-fetch("https://official-joke-api.appspot.com/jokes/programming/random").then((res) => res.json()).then((a) => {
-   // console.log(a);
-   // console.log(a[0].punchline);
-   // console.log(a[0].setup);
-   // console.log(a[0].type);
-   // console.log(a[0].id);
-   a.forEach((i) => {
-      console.log(i.punchline);
-   })
-   
-}).catch((err) => console.error(err))
+
+const promise = new Promise((res, rej) => {
+  const sum = 1 + 1;
+  if (sum == 2) {
+    res("Success");
+  } else {
+    rej("Error");
+  }
+});
+
+promise.then((msg) => console.log(msg)).catch((err) => console.error(err)); // Promise will trigger then , then will trigger catch
+
+function promiseTimeout(duration) {
+  return new Promise((res, rej) => setTimeout(res, duration));
+}
+
+promiseTimeout(1000)
+  // Function resolve will call the then()
+  .then(() => {
+    console.log("1 promise");
+    return promiseTimeout(2000); // returning duration for next then() callback
+  })
+  .then(() => {
+    console.log("2 promise");
+  });

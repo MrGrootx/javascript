@@ -40,3 +40,16 @@ for(let name of personNames) {
  * How this Works 
 originalArray.map(currentValue,index,originalArray)
 */
+
+
+const Names = ["Abishek", "Groot", "GrootDevelopment", "Banana"];
+
+
+const names2 = Names.map((name) => {
+   console.log('name', name.toUpperCase());
+   
+   return name // returning as array 
+
+})
+
+console.log(names2);
