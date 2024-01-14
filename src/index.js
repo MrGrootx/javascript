@@ -1,26 +1,23 @@
 // 5aa056df78d070bb784376917095f6c7
+const api_url =
+  "https://newsapi.org/v2/everything?q=tesla&from=2023-12-12&sortBy=publishedAt&apiKey=c48331c6ab19466d8db12780d436e488";
 
-const promise = new Promise((res, rej) => {
-  const sum = 1 + 1;
-  if (sum == 2) {
-    res("Success");
-  } else {
-    rej("Error");
+async function getNewsData() {
+  try {
+    const response = await fetch(api_url);
+    const jsonData = await response.json();
+    return jsonData;
+  } catch (error) {
+    console.log(`ERROR`, error);
   }
-});
+ 
 
-promise.then((msg) => console.log(msg)).catch((err) => console.error(err)); // Promise will trigger then , then will trigger catch
-
-function promiseTimeout(duration) {
-  return new Promise((res, rej) => setTimeout(res, duration));
 }
 
-promiseTimeout(1000)
-  // Function resolve will call the then()
-  .then(() => {
-    console.log("1 promise");
-    return promiseTimeout(2000); // returning duration for next then() callback
-  })
-  .then(() => {
-    console.log("2 promise");
+const newsData = getNewsData().then((res) => {
+  const data = res.articles;
+
+  data.forEach(element => {
+    console.log(element);
   });
+})
