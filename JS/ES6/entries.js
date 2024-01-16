@@ -1,4 +1,3 @@
-// 5aa056df78d070bb784376917095f6c7
 const Names = [
    "Abishek",
    "Groot",
@@ -9,4 +8,8 @@ const Names = [
    "jeeva",
  ];
 
-// console.log(fetch("Gkz2HQKfPH7KoNh2K1SqFcz24xz92YYB"));
+ const nameEntries = Names.entries()
+
+ for(let [i,index] of nameEntries){
+   console.log(i,index);
+ }
