@@ -16,3 +16,4 @@ const Names = [
 // console.log(fetch(`https://api.github.com/users/${userName}`).then(res => console.log(res.json())).then(data => console.log(data)));
 
 
+console.log(fetch("https://discord.com/api/v10")); 
